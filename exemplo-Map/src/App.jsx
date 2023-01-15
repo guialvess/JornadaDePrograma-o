@@ -1,5 +1,4 @@
-
-function App() {
+export default function App() {
   const users = [
     {
       name: 'Matheus',
@@ -33,14 +32,13 @@ function App() {
     }
   ]
   return (
-    users.map(user => {
+    users.map(user => 
       <div key={user.name}>
         <div>nome: {user.name}</div>
         <div>idade: {user.age}</div>
         <div>é ADM : {user.isAdmin ? "SIM" : "NÃO"}</div>
+        <div>------------------------</div>
       </div>
-    })
+    )
   )
 }
-
-export default App
